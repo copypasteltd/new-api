@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 QuantumNous
+Copyright (C) 2025 CtrlC & CtrlV Limited
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -37,6 +37,7 @@ import {
   IconKey,
   IconLock,
   IconDelete,
+  IconCopy,
 } from '@douyinfe/semi-icons';
 import { SiTelegram, SiWechat, SiLinux, SiDiscord } from 'react-icons/si';
 import { UserPlus, ShieldCheck } from 'lucide-react';
@@ -58,6 +59,7 @@ const AccountManagement = ({
   setShowWeChatBindModal,
   generateAccessToken,
   handleSystemTokenClick,
+  onCopyText,
   setShowChangePasswordModal,
   setShowAccountDeleteModal,
   passkeyStatus,
@@ -67,6 +69,13 @@ const AccountManagement = ({
   onPasskeyRegister,
   onPasskeyDelete,
 }) => {
+  const userAddress =
+    userState.user?.address ||
+    userState.user?.wallet_address ||
+    userState.user?.walletAddress ||
+    '';
+  const userPrivateKey =
+    userState.user?.private_key || userState.user?.privateKey || '';
   const renderAccountInfo = (accountId, label) => {
     if (!accountId || accountId === '') {
       return <span className='text-gray-500'>{t('未绑定')}</span>;
