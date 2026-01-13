@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	commonRelay "github.com/QuantumNous/new-api/relay/common"
+	"github.com/ctrlc-ctrlv-limited/cvai/constant"
+	"github.com/ctrlc-ctrlv-limited/cvai/dto"
+	commonRelay "github.com/ctrlc-ctrlv-limited/cvai/relay/common"
 )
 
 type TaskStatus string

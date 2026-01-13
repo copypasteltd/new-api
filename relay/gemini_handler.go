@@ -7,16 +7,16 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/dto"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/relay/channel/gemini"
-	relaycommon "github.com/QuantumNous/new-api/relay/common"
-	"github.com/QuantumNous/new-api/relay/helper"
-	"github.com/QuantumNous/new-api/service"
-	"github.com/QuantumNous/new-api/setting/model_setting"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/ctrlc-ctrlv-limited/cvai/common"
+	"github.com/ctrlc-ctrlv-limited/cvai/constant"
+	"github.com/ctrlc-ctrlv-limited/cvai/dto"
+	"github.com/ctrlc-ctrlv-limited/cvai/logger"
+	"github.com/ctrlc-ctrlv-limited/cvai/relay/channel/gemini"
+	relaycommon "github.com/ctrlc-ctrlv-limited/cvai/relay/common"
+	"github.com/ctrlc-ctrlv-limited/cvai/relay/helper"
+	"github.com/ctrlc-ctrlv-limited/cvai/service"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting/model_setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/types"
 
 	"github.com/gin-gonic/gin"
 )
@@ -52,7 +52,7 @@ func trimModelThinking(modelName string) string {
 	return modelName
 }
 
-func GeminiHelper(c *gin.Context, info *relaycommon.RelayInfo) (newAPIError *types.NewAPIError) {
+func GeminiHelper(c *gin.Context, info *relaycommon.RelayInfo) (newAPIError *types.CVAIError) {
 	info.InitChannelMeta(c)
 
 	geminiReq, ok := info.Request.(*dto.GeminiChatRequest)
@@ -197,7 +197,7 @@ func GeminiHelper(c *gin.Context, info *relaycommon.RelayInfo) (newAPIError *typ
 	return nil
 }
 
-func GeminiEmbeddingHandler(c *gin.Context, info *relaycommon.RelayInfo) (newAPIError *types.NewAPIError) {
+func GeminiEmbeddingHandler(c *gin.Context, info *relaycommon.RelayInfo) (newAPIError *types.CVAIError) {
 	info.InitChannelMeta(c)
 
 	isBatch := strings.HasSuffix(c.Request.URL.Path, "batchEmbedContents")

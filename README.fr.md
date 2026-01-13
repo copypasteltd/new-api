@@ -1,8 +1,8 @@
 <div align="center">
 
-![new-api](/web/public/logo.png)
+![cvai](/web/public/logo.png)
 
-# New API
+# CVAI
 
 🍥 **Passerelle de modèles étendus de nouvelle génération et système de gestion d'actifs d'IA**
 
@@ -14,26 +14,26 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/Calcium-Ion/new-api/main/LICENSE">
-    <img src="https://img.shields.io/github/license/Calcium-Ion/new-api?color=brightgreen" alt="licence">
+  <a href="https://raw.githubusercontent.com/ctrlc-ctrlv-limited/cvai/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ctrlc-ctrlv-limited/cvai?color=brightgreen" alt="licence">
   </a>
-  <a href="https://github.com/Calcium-Ion/new-api/releases/latest">
-    <img src="https://img.shields.io/github/v/release/Calcium-Ion/new-api?color=brightgreen&include_prereleases" alt="version">
+  <a href="https://github.com/ctrlc-ctrlv-limited/cvai/releases/latest">
+    <img src="https://img.shields.io/github/v/release/ctrlc-ctrlv-limited/cvai?color=brightgreen&include_prereleases" alt="version">
   </a>
-  <a href="https://github.com/users/Calcium-Ion/packages/container/package/new-api">
+  <a href="https://github.com/users/ctrlc-ctrlv-limited/packages/container/package/cvai">
     <img src="https://img.shields.io/badge/docker-ghcr.io-blue" alt="docker">
   </a>
-  <a href="https://hub.docker.com/r/CalciumIon/new-api">
+  <a href="https://hub.docker.com/r/ctrlc-ctrlv-limited/cvai">
     <img src="https://img.shields.io/badge/docker-dockerHub-blue" alt="docker">
   </a>
-  <a href="https://goreportcard.com/report/github.com/Calcium-Ion/new-api">
-    <img src="https://goreportcard.com/badge/github.com/Calcium-Ion/new-api" alt="GoReportCard">
+  <a href="https://goreportcard.com/report/github.com/ctrlc-ctrlv-limited/cvai">
+    <img src="https://goreportcard.com/badge/github.com/ctrlc-ctrlv-limited/cvai" alt="GoReportCard">
   </a>
 </p>
 
 <p align="center">
   <a href="https://trendshift.io/repositories/8227" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/8227" alt="Calcium-Ion%2Fnew-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+    <img src="https://trendshift.io/api/badge/repositories/8227" alt="ctrlc-ctrlv-limited%2Fcvai | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
   </a>
 </p>
 
@@ -72,7 +72,7 @@
   <a href="https://bda.pku.edu.cn/" target="_blank">
     <img src="./docs/images/pku.png" alt="Université de Pékin" height="80" />
   </a>
-  <a href="https://www.compshare.cn/?ytag=GPU_yy_gh_newapi" target="_blank">
+  <a href="https://www.compshare.cn/?ytag=GPU_yy_gh_cvai" target="_blank">
     <img src="./docs/images/ucloud.png" alt="UCloud" height="80" />
   </a>
   <a href="https://www.aliyun.com/" target="_blank">
@@ -88,13 +88,13 @@
 ## 🙏 Remerciements spéciaux
 
 <p align="center">
-  <a href="https://www.jetbrains.com/?from=new-api" target="_blank">
+  <a href="https://www.jetbrains.com/?from=cvai" target="_blank">
     <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo" width="120" />
   </a>
 </p>
 
 <p align="center">
-  <strong>Merci à <a href="https://www.jetbrains.com/?from=new-api">JetBrains</a> pour avoir fourni une licence de développement open-source gratuite pour ce projet</strong>
+  <strong>Merci à <a href="https://www.jetbrains.com/?from=cvai">JetBrains</a> pour avoir fourni une licence de développement open-source gratuite pour ce projet</strong>
 </p>
 
 ---
@@ -105,8 +105,8 @@
 
 ```bash
 # Cloner le projet
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/ctrlc-ctrlv-limited/cvai.git
+cd cvai
 
 # Modifier la configuration docker-compose.yml
 nano docker-compose.yml
@@ -120,22 +120,22 @@ docker-compose up -d
 
 ```bash
 # Tirer la dernière image
-docker pull calciumion/new-api:latest
+docker pull ctrlc-ctrlv-limited/cvai:latest
 
 # Utilisation de SQLite (par défaut)
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 
 # Utilisation de MySQL
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 ```
 
 > **💡 Astuce:** `-v ./data:/data` sauvegardera les données dans le dossier `data` du répertoire actuel, vous pouvez également le changer en chemin absolu comme `-v /your/custom/path:/data`
@@ -146,7 +146,7 @@ docker run --name new-api -d --restart always \
 
 🎉 Après le déploiement, visitez `http://localhost:3000` pour commencer à utiliser!
 
-📖 Pour plus de méthodes de déploiement, veuillez vous référer à [Guide de déploiement](https://docs.newapi.pro/en/docs/installation)
+📖 Pour plus de méthodes de déploiement, veuillez vous référer à [Guide de déploiement](https://docs.cvai.pro/en/docs/installation)
 
 ---
 
@@ -154,7 +154,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [Documentation officielle](https://docs.newapi.pro/en/docs) | [![Demander à DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [Documentation officielle](https://docs.cvai.pro/en/docs) | [![Demander à DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ctrlc-ctrlv-limited/cvai)
 
 </div>
 
@@ -162,17 +162,17 @@ docker run --name new-api -d --restart always \
 
 | Catégorie | Lien |
 |------|------|
-| 🚀 Guide de déploiement | [Documentation d'installation](https://docs.newapi.pro/en/docs/installation) |
-| ⚙️ Configuration de l'environnement | [Variables d'environnement](https://docs.newapi.pro/en/docs/installation/config-maintenance/environment-variables) |
-| 📡 Documentation de l'API | [Documentation de l'API](https://docs.newapi.pro/en/docs/api) |
-| ❓ FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
-| 💬 Interaction avec la communauté | [Canaux de communication](https://docs.newapi.pro/en/docs/support/community-interaction) |
+| 🚀 Guide de déploiement | [Documentation d'installation](https://docs.cvai.pro/en/docs/installation) |
+| ⚙️ Configuration de l'environnement | [Variables d'environnement](https://docs.cvai.pro/en/docs/installation/config-maintenance/environment-variables) |
+| 📡 Documentation de l'API | [Documentation de l'API](https://docs.cvai.pro/en/docs/api) |
+| ❓ FAQ | [FAQ](https://docs.cvai.pro/en/docs/support/faq) |
+| 💬 Interaction avec la communauté | [Canaux de communication](https://docs.cvai.pro/en/docs/support/community-interaction) |
 
 ---
 
 ## ✨ Fonctionnalités clés
 
-> Pour les fonctionnalités détaillées, veuillez vous référer à [Présentation des fonctionnalités](https://docs.newapi.pro/en/docs/guide/wiki/basic-concepts/features-introduction) |
+> Pour les fonctionnalités détaillées, veuillez vous référer à [Présentation des fonctionnalités](https://docs.cvai.pro/en/docs/guide/wiki/basic-concepts/features-introduction) |
 
 ### 🎨 Fonctions principales
 
@@ -200,11 +200,11 @@ docker run --name new-api -d --restart always \
 ### 🚀 Fonctionnalités avancées
 
 **Prise en charge des formats d'API:**
-- ⚡ [OpenAI Responses](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/en/docs/api/ai-model/realtime/create-realtime-session) (y compris Azure)
-- ⚡ [Claude Messages](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://doc.newapi.pro/en/api/google-gemini-chat)
-- 🔄 [Modèles Rerank](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank) (Cohere, Jina)
+- ⚡ [OpenAI Responses](https://docs.cvai.pro/en/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://docs.cvai.pro/en/docs/api/ai-model/realtime/create-realtime-session) (y compris Azure)
+- ⚡ [Claude Messages](https://docs.cvai.pro/en/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://doc.cvai.pro/en/api/google-gemini-chat)
+- 🔄 [Modèles Rerank](https://docs.cvai.pro/en/docs/api/ai-model/rerank/create-rerank) (Cohere, Jina)
 
 **Routage intelligent:**
 - ⚖️ Sélection aléatoire pondérée des canaux
@@ -244,16 +244,16 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 Prise en charge des modèles
 
-> Pour les détails, veuillez vous référer à [Documentation de l'API - Interface de relais](https://docs.newapi.pro/en/docs/api)
+> Pour les détails, veuillez vous référer à [Documentation de l'API - Interface de relais](https://docs.cvai.pro/en/docs/api)
 
 | Type de modèle | Description | Documentation |
 |---------|------|------|
 | 🤖 OpenAI GPTs | série gpt-4-gizmo-* | - |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [Documentation](https://doc.newapi.pro/en/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [Documentation](https://doc.newapi.pro/en/api/suno-music) |
-| 🔄 Rerank | Cohere, Jina | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank) |
-| 💬 Claude | Format Messages | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message) |
-| 🌐 Gemini | Format Google Gemini | [Documentation](https://doc.newapi.pro/en/api/google-gemini-chat) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [Documentation](https://doc.cvai.pro/en/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [Documentation](https://doc.cvai.pro/en/api/suno-music) |
+| 🔄 Rerank | Cohere, Jina | [Documentation](https://docs.cvai.pro/en/docs/api/ai-model/rerank/create-rerank) |
+| 💬 Claude | Format Messages | [Documentation](https://docs.cvai.pro/en/docs/api/ai-model/chat/create-message) |
+| 🌐 Gemini | Format Google Gemini | [Documentation](https://doc.cvai.pro/en/api/google-gemini-chat) |
 | 🔧 Dify | Mode ChatFlow | - |
 | 🎯 Personnalisé | Prise en charge de l'adresse d'appel complète | - |
 
@@ -262,16 +262,16 @@ docker run --name new-api -d --restart always \
 <details>
 <summary>Voir la liste complète des interfaces</summary>
 
-- [Interface de discussion (Chat Completions)](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-chat-completion)
-- [Interface de réponse (Responses)](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-response)
-- [Interface d'image (Image)](https://docs.newapi.pro/en/docs/api/ai-model/images/openai/v1-images-generations--post)
-- [Interface audio (Audio)](https://docs.newapi.pro/en/docs/api/ai-model/audio/openai/create-transcription)
-- [Interface vidéo (Video)](https://docs.newapi.pro/en/docs/api/ai-model/videos/create-video-generation)
-- [Interface d'incorporation (Embeddings)](https://docs.newapi.pro/en/docs/api/ai-model/embeddings/create-embedding)
-- [Interface de rerank (Rerank)](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank)
-- [Conversation en temps réel (Realtime)](https://docs.newapi.pro/en/docs/api/ai-model/realtime/create-realtime-session)
-- [Discussion Claude](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message)
-- [Discussion Google Gemini](https://doc.newapi.pro/en/api/google-gemini-chat)
+- [Interface de discussion (Chat Completions)](https://docs.cvai.pro/en/docs/api/ai-model/chat/openai/create-chat-completion)
+- [Interface de réponse (Responses)](https://docs.cvai.pro/en/docs/api/ai-model/chat/openai/create-response)
+- [Interface d'image (Image)](https://docs.cvai.pro/en/docs/api/ai-model/images/openai/v1-images-generations--post)
+- [Interface audio (Audio)](https://docs.cvai.pro/en/docs/api/ai-model/audio/openai/create-transcription)
+- [Interface vidéo (Video)](https://docs.cvai.pro/en/docs/api/ai-model/videos/create-video-generation)
+- [Interface d'incorporation (Embeddings)](https://docs.cvai.pro/en/docs/api/ai-model/embeddings/create-embedding)
+- [Interface de rerank (Rerank)](https://docs.cvai.pro/en/docs/api/ai-model/rerank/create-rerank)
+- [Conversation en temps réel (Realtime)](https://docs.cvai.pro/en/docs/api/ai-model/realtime/create-realtime-session)
+- [Discussion Claude](https://docs.cvai.pro/en/docs/api/ai-model/chat/create-message)
+- [Discussion Google Gemini](https://doc.cvai.pro/en/api/google-gemini-chat)
 
 </details>
 
@@ -280,7 +280,7 @@ docker run --name new-api -d --restart always \
 ## 🚢 Déploiement
 
 > [!TIP]
-> **Dernière image Docker:** `calciumion/new-api:latest`
+> **Dernière image Docker:** `ctrlc-ctrlv-limited/cvai:latest`
 
 ### 📋 Exigences de déploiement
 
@@ -307,14 +307,14 @@ docker run --name new-api -d --restart always \
 | `AZURE_DEFAULT_API_VERSION` | Version de l'API Azure | `2025-04-01-preview` |
 | `ERROR_LOG_ENABLED` | Interrupteur du journal d'erreurs | `false` |
 | `PYROSCOPE_URL` | Adresse du serveur Pyroscope | - |
-| `PYROSCOPE_APP_NAME` | Nom de l'application Pyroscope | `new-api` |
+| `PYROSCOPE_APP_NAME` | Nom de l'application Pyroscope | `cvai` |
 | `PYROSCOPE_BASIC_AUTH_USER` | Utilisateur Basic Auth Pyroscope | - |
 | `PYROSCOPE_BASIC_AUTH_PASSWORD` | Mot de passe Basic Auth Pyroscope | - |
 | `PYROSCOPE_MUTEX_RATE` | Taux d'échantillonnage mutex Pyroscope | `5` |
 | `PYROSCOPE_BLOCK_RATE` | Taux d'échantillonnage block Pyroscope | `5` |
-| `HOSTNAME` | Nom d'hôte tagué pour Pyroscope | `new-api` |
+| `HOSTNAME` | Nom d'hôte tagué pour Pyroscope | `cvai` |
 
-📖 **Configuration complète:** [Documentation des variables d'environnement](https://docs.newapi.pro/en/docs/installation/config-maintenance/environment-variables)
+📖 **Configuration complète:** [Documentation des variables d'environnement](https://docs.cvai.pro/en/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -325,8 +325,8 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # Cloner le projet
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/ctrlc-ctrlv-limited/cvai.git
+cd cvai
 
 # Modifier la configuration
 nano docker-compose.yml
@@ -342,21 +342,21 @@ docker-compose up -d
 
 **Utilisation de SQLite:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 ```
 
 **Utilisation de MySQL:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 ```
 
 > **💡 Explication du chemin:** 
@@ -368,8 +368,8 @@ docker run --name new-api -d --restart always \
 <details>
 <summary><strong>Méthode 3: Panneau BaoTa</strong></summary>
 
-1. Installez le panneau BaoTa (version **9.2.0** ou supérieure), recherchez **New-API** dans le magasin d'applications et installez-le.
-2. Recherchez **New-API** dans le magasin d'applications et installez-le.
+1. Installez le panneau BaoTa (version **9.2.0** ou supérieure), recherchez **CVAI** dans le magasin d'applications et installez-le.
+2. Recherchez **CVAI** dans le magasin d'applications et installez-le.
 
 📖 [Tutoriel avec des images](./docs/BT.md)
 
@@ -414,10 +414,10 @@ docker run --name new-api -d --restart always \
 
 | Ressource | Lien |
 |------|------|
-| 📘 FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
-| 💬 Interaction avec la communauté | [Canaux de communication](https://docs.newapi.pro/en/docs/support/community-interaction) |
-| 🐛 Commentaires sur les problèmes | [Commentaires sur les problèmes](https://docs.newapi.pro/en/docs/support/feedback-issues) |
-| 📚 Documentation complète | [Documentation officielle](https://docs.newapi.pro/en/docs) |
+| 📘 FAQ | [FAQ](https://docs.cvai.pro/en/docs/support/faq) |
+| 💬 Interaction avec la communauté | [Canaux de communication](https://docs.cvai.pro/en/docs/support/community-interaction) |
+| 🐛 Commentaires sur les problèmes | [Commentaires sur les problèmes](https://docs.cvai.pro/en/docs/support/feedback-issues) |
+| 📚 Documentation complète | [Documentation officielle](https://docs.cvai.pro/en/docs) |
 
 ### 🤝 Guide de contribution
 
@@ -434,7 +434,7 @@ Bienvenue à toutes les formes de contribution!
 
 <div align="center">
 
-[![Graphique de l'historique des étoiles](https://api.star-history.com/svg?repos=Calcium-Ion/new-api&type=Date)](https://star-history.com/#Calcium-Ion/new-api&Date)
+[![Graphique de l'historique des étoiles](https://api.star-history.com/svg?repos=ctrlc-ctrlv-limited/cvai&type=Date)](https://star-history.com/#ctrlc-ctrlv-limited/cvai&Date)
 
 </div>
 
@@ -442,12 +442,12 @@ Bienvenue à toutes les formes de contribution!
 
 <div align="center">
 
-### 💖 Merci d'utiliser New API
+### 💖 Merci d'utiliser CVAI
 
 Si ce projet vous est utile, bienvenue à nous donner une ⭐️ Étoile！
 
-**[Documentation officielle](https://docs.newapi.pro/en/docs)** • **[Commentaires sur les problèmes](https://github.com/Calcium-Ion/new-api/issues)** • **[Dernière version](https://github.com/Calcium-Ion/new-api/releases)**
+**[Documentation officielle](https://docs.cvai.pro/en/docs)** • **[Commentaires sur les problèmes](https://github.com/ctrlc-ctrlv-limited/cvai/issues)** • **[Dernière version](https://github.com/ctrlc-ctrlv-limited/cvai/releases)**
 
-<sub>Construit avec ❤️ par QuantumNous</sub>
+<sub>Construit avec ❤️ par CtrlC CtrlV Limited</sub>
 
 </div>

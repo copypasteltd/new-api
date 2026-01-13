@@ -6,14 +6,14 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/middleware"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/setting"
-	"github.com/QuantumNous/new-api/setting/console_setting"
-	"github.com/QuantumNous/new-api/setting/operation_setting"
-	"github.com/QuantumNous/new-api/setting/system_setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/common"
+	"github.com/ctrlc-ctrlv-limited/cvai/constant"
+	"github.com/ctrlc-ctrlv-limited/cvai/middleware"
+	"github.com/ctrlc-ctrlv-limited/cvai/model"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting/console_setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting/operation_setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting/system_setting"
 
 	"github.com/gin-gonic/gin"
 )

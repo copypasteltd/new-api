@@ -5,9 +5,9 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/setting/config"
-	"github.com/QuantumNous/new-api/types"
+	"github.com/ctrlc-ctrlv-limited/cvai/common"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting/config"
+	"github.com/ctrlc-ctrlv-limited/cvai/types"
 )
 
 var groupRatio = map[string]float64{

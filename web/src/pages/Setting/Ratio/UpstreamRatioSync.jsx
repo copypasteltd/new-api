@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 CtrlC & CtrlV Limited
+Copyright (C) 2025 CtrlC CtrlV Limited
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -160,7 +160,7 @@ export default function UpstreamRatioSync(props) {
               name === '官方倍率预设';
             if (!merged[id]) {
               merged[id] = isOfficial
-                ? '/llm-metadata/api/newapi/ratio_config-v1-base.json'
+                ? '/llm-metadata/api/cvai/ratio_config-v1-base.json'
                 : DEFAULT_ENDPOINT;
             }
           });

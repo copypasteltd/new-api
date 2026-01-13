@@ -3,11 +3,11 @@ package service
 import (
 	"errors"
 
-	"github.com/QuantumNous/new-api/common"
-	"github.com/QuantumNous/new-api/constant"
-	"github.com/QuantumNous/new-api/logger"
-	"github.com/QuantumNous/new-api/model"
-	"github.com/QuantumNous/new-api/setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/common"
+	"github.com/ctrlc-ctrlv-limited/cvai/constant"
+	"github.com/ctrlc-ctrlv-limited/cvai/logger"
+	"github.com/ctrlc-ctrlv-limited/cvai/model"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting"
 	"github.com/gin-gonic/gin"
 )
 

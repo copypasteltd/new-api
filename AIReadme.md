@@ -1,0 +1,67 @@
+# Project Structure Overview
+
+Root files:
+- .dockerignore
+- .env.example
+- .gitignore
+- Dockerfile
+- LICENSE
+- README.en.md
+- README.fr.md
+- README.ja.md
+- README.md
+- VERSION
+- docker-compose.yml
+- go.mod
+- go.sum
+- main.go
+- makefile
+- cvai.service
+
+Top-level directories:
+- .git/
+  - subdirs: hooks, info, logs, objects, refs
+  - files: COMMIT_EDITMSG, HEAD, config, description, index, packed-refs
+- .github/
+  - subdirs: ISSUE_TEMPLATE, PULL_REQUEST_TEMPLATE, workflows
+  - files: FUNDING.yml
+- bin/
+  - files: migration_v0.2-v0.3.sql, migration_v0.3-v0.4.sql, time_test.sh
+- common/
+  - subdirs: limiter
+  - files: api_type.go, audio.go, constants.go, copy.go, crypto.go, custom-event.go, database.go, email-outlook-auth.go, email.go, embed-file-system.go, endpoint_defaults.go, endpoint_type.go, env.go, gin.go, go-channel.go, gopool.go, hash.go, init.go, ip.go, json.go, model.go, page_info.go, pprof.go, pyro.go, quota.go, rate-limit.go, redis.go, ssrf_protection.go, str.go, sys_log.go, topup-ratio.go, totp.go, utils.go, validate.go, verification.go
+- constant/
+  - files: README.md, api_type.go, azure.go, cache_key.go, channel.go, context_key.go, endpoint_type.go, env.go, finish_reason.go, midjourney.go, multi_key_mode.go, setup.go, task.go
+- controller/
+  - files: billing.go, channel-billing.go, channel-test.go, channel.go, checkin.go, console_migrate.go, deployment.go, discord.go, github.go, group.go, image.go, linuxdo.go, log.go, midjourney.go, misc.go, missing_models.go, model.go, model_meta.go, model_sync.go, oidc.go, option.go, passkey.go, playground.go, prefill_group.go, pricing.go, ratio_config.go, ratio_sync.go, redemption.go, relay.go, secure_verification.go, setup.go, swag_video.go, task.go, task_video.go, telegram.go, token.go, topup.go, topup_creem.go, topup_stripe.go, twofa.go, uptime_kuma.go, usedata.go, user.go, vendor_meta.go, video_proxy.go, video_proxy_gemini.go, wechat.go
+- docs/
+  - subdirs: channel, images, installation, openapi
+  - files: ionet-client.md, translation-glossary.fr.md, translation-glossary.md, translation-glossary.ru.md
+- dto/
+  - files: audio.go, channel_settings.go, claude.go, embedding.go, error.go, gemini.go, midjourney.go, notify.go, openai_image.go, openai_request.go, openai_response.go, openai_video.go, playground.go, pricing.go, ratio_sync.go, realtime.go, request_common.go, rerank.go, sensitive.go, suno.go, task.go, user_settings.go, video.go
+- electron/
+  - files: README.md, build.sh, create-tray-icon.js, entitlements.mac.plist, icon.png, main.js, package-lock.json, package.json, preload.js, tray-icon-windows.png, tray-iconTemplate.png, tray-iconTemplate@2x.png
+- logger/
+  - files: logger.go
+- middleware/
+  - files: auth.go, cache.go, cors.go, disable-cache.go, distributor.go, email-verification-rate-limit.go, gzip.go, jimeng_adapter.go, kling_adapter.go, logger.go, model-rate-limit.go, rate-limit.go, recover.go, request-id.go, secure_verification.go, stats.go, turnstile-check.go, utils.go
+- model/
+  - files: ability.go, channel.go, channel_cache.go, checkin.go, log.go, main.go, midjourney.go, missing_models.go, model_extra.go, model_meta.go, option.go, passkey.go, prefill_group.go, pricing.go, pricing_default.go, pricing_refresh.go, redemption.go, setup.go, task.go, token.go, token_cache.go, topup.go, twofa.go, usedata.go, user.go, user_cache.go, utils.go, vendor_meta.go
+- pkg/
+  - subdirs: ionet
+- relay/
+  - subdirs: channel, common, common_handler, constant, helper
+  - files: audio_handler.go, chat_completions_via_responses.go, claude_handler.go, compatible_handler.go, embedding_handler.go, gemini_handler.go, image_handler.go, mjproxy_handler.go, relay_adaptor.go, relay_task.go, rerank_handler.go, responses_handler.go, websocket.go
+- router/
+  - files: api-router.go, dashboard.go, main.go, relay-router.go, video-router.go, web-router.go
+- service/
+  - subdirs: openaicompat, passkey
+  - files: audio.go, channel.go, channel_select.go, convert.go, download.go, epay.go, error.go, file_decoder.go, group.go, http.go, http_client.go, image.go, log_info_generate.go, midjourney.go, notify-limit.go, openai_chat_responses_compat.go, openai_chat_responses_mode.go, pre_consume_quota.go, quota.go, sensitive.go, str.go, task.go, token_counter.go, token_estimator.go, tokenizer.go, usage_helpr.go, user_notify.go, webhook.go
+- setting/
+  - subdirs: config, console_setting, model_setting, operation_setting, ratio_setting, reasoning, system_setting
+  - files: auto_group.go, chat.go, midjourney.go, payment_creem.go, payment_stripe.go, rate_limit.go, sensitive.go, user_usable_group.go
+- types/
+  - files: channel_error.go, error.go, file_data.go, price_data.go, relay_format.go, request_meta.go, rw_map.go, set.go
+- web/
+  - subdirs: public, src
+  - files: .eslintrc.cjs, .gitignore, .prettierrc.mjs, bun.lock, i18next.config.js, index.html, jsconfig.json, package.json, postcss.config.js, tailwind.config.js, vercel.json, vite.config.js

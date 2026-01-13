@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 CtrlC & CtrlV Limited
+Copyright (C) 2025 CtrlC CtrlV Limited
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -37,7 +37,7 @@ import en_GB from '@douyinfe/semi-ui/lib/es/locale/source/en_GB';
 // Welcome message (Do not remove this without permission from the original developer)
 if (typeof window !== 'undefined') {
   console.log(
-    '%cWE ❤ CtrlC & CtrlV AI%c Github: https://github.com/CtrlC & CtrlV Limited/new-api',
+    '%cWE ❤ CVAI%c Github: https://github.com/ctrlc-ctrlv-limited/cvai',
     'color: #10b981; font-weight: bold; font-size: 24px;',
     'color: inherit; font-size: 14px;',
   );

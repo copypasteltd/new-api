@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 CtrlC & CtrlV Limited
+Copyright (C) 2025 CtrlC CtrlV Limited
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -335,7 +335,7 @@ const OllamaModelModal = ({
       const fetchHeaders = {
         'Content-Type': 'application/json',
         Accept: 'text/event-stream',
-        'New-API-User': String(userId),
+        'CVAI-User': String(userId),
         ...authHeaders,
       };
 

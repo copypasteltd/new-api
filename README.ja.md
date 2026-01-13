@@ -1,8 +1,8 @@
 <div align="center">
 
-![new-api](/web/public/logo.png)
+![cvai](/web/public/logo.png)
 
-# New API
+# CVAI
 
 🍥 **次世代大規模モデルゲートウェイとAI資産管理システム**
 
@@ -14,26 +14,26 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/Calcium-Ion/new-api/main/LICENSE">
-    <img src="https://img.shields.io/github/license/Calcium-Ion/new-api?color=brightgreen" alt="license">
+  <a href="https://raw.githubusercontent.com/ctrlc-ctrlv-limited/cvai/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ctrlc-ctrlv-limited/cvai?color=brightgreen" alt="license">
   </a>
-  <a href="https://github.com/Calcium-Ion/new-api/releases/latest">
-    <img src="https://img.shields.io/github/v/release/Calcium-Ion/new-api?color=brightgreen&include_prereleases" alt="release">
+  <a href="https://github.com/ctrlc-ctrlv-limited/cvai/releases/latest">
+    <img src="https://img.shields.io/github/v/release/ctrlc-ctrlv-limited/cvai?color=brightgreen&include_prereleases" alt="release">
   </a>
-  <a href="https://github.com/users/Calcium-Ion/packages/container/package/new-api">
+  <a href="https://github.com/users/ctrlc-ctrlv-limited/packages/container/package/cvai">
     <img src="https://img.shields.io/badge/docker-ghcr.io-blue" alt="docker">
   </a>
-  <a href="https://hub.docker.com/r/CalciumIon/new-api">
+  <a href="https://hub.docker.com/r/ctrlc-ctrlv-limited/cvai">
     <img src="https://img.shields.io/badge/docker-dockerHub-blue" alt="docker">
   </a>
-  <a href="https://goreportcard.com/report/github.com/Calcium-Ion/new-api">
-    <img src="https://goreportcard.com/badge/github.com/Calcium-Ion/new-api" alt="GoReportCard">
+  <a href="https://goreportcard.com/report/github.com/ctrlc-ctrlv-limited/cvai">
+    <img src="https://goreportcard.com/badge/github.com/ctrlc-ctrlv-limited/cvai" alt="GoReportCard">
   </a>
 </p>
 
 <p align="center">
   <a href="https://trendshift.io/repositories/8227" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/8227" alt="Calcium-Ion%2Fnew-api | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
+    <img src="https://trendshift.io/api/badge/repositories/8227" alt="ctrlc-ctrlv-limited%2Fcvai | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/>
   </a>
 </p>
 
@@ -72,7 +72,7 @@
   <a href="https://bda.pku.edu.cn/" target="_blank">
     <img src="./docs/images/pku.png" alt="北京大学" height="80" />
   </a>
-  <a href="https://www.compshare.cn/?ytag=GPU_yy_gh_newapi" target="_blank">
+  <a href="https://www.compshare.cn/?ytag=GPU_yy_gh_cvai" target="_blank">
     <img src="./docs/images/ucloud.png" alt="UCloud 優刻得" height="80" />
   </a>
   <a href="https://www.aliyun.com/" target="_blank">
@@ -88,13 +88,13 @@
 ## 🙏 特別な感謝
 
 <p align="center">
-  <a href="https://www.jetbrains.com/?from=new-api" target="_blank">
+  <a href="https://www.jetbrains.com/?from=cvai" target="_blank">
     <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo" width="120" />
   </a>
 </p>
 
 <p align="center">
-  <strong>感謝 <a href="https://www.jetbrains.com/?from=new-api">JetBrains</a> が本プロジェクトに無料のオープンソース開発ライセンスを提供してくれたことに感謝します</strong>
+  <strong>感謝 <a href="https://www.jetbrains.com/?from=cvai">JetBrains</a> が本プロジェクトに無料のオープンソース開発ライセンスを提供してくれたことに感謝します</strong>
 </p>
 
 ---
@@ -105,8 +105,8 @@
 
 ```bash
 # プロジェクトをクローン
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/ctrlc-ctrlv-limited/cvai.git
+cd cvai
 
 # docker-compose.yml 設定を編集
 nano docker-compose.yml
@@ -120,22 +120,22 @@ docker-compose up -d
 
 ```bash
 # 最新のイメージをプル
-docker pull calciumion/new-api:latest
+docker pull ctrlc-ctrlv-limited/cvai:latest
 
 # SQLiteを使用（デフォルト）
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 
 # MySQLを使用
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 ```
 
 > **💡 ヒント:** `-v ./data:/data` は現在のディレクトリの `data` フォルダにデータを保存します。絶対パスに変更することもできます：`-v /your/custom/path:/data`
@@ -146,7 +146,7 @@ docker run --name new-api -d --restart always \
 
 🎉 デプロイが完了したら、`http://localhost:3000` にアクセスして使用を開始してください！
 
-📖 その他のデプロイ方法については[デプロイガイド](https://docs.newapi.pro/ja/docs/installation)を参照してください。
+📖 その他のデプロイ方法については[デプロイガイド](https://docs.cvai.pro/ja/docs/installation)を参照してください。
 
 ---
 
@@ -154,7 +154,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [公式ドキュメント](https://docs.newapi.pro/ja/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [公式ドキュメント](https://docs.cvai.pro/ja/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ctrlc-ctrlv-limited/cvai)
 
 </div>
 
@@ -162,17 +162,17 @@ docker run --name new-api -d --restart always \
 
 | カテゴリ | リンク |
 |------|------|
-| 🚀 デプロイガイド | [インストールドキュメント](https://docs.newapi.pro/ja/docs/installation) |
-| ⚙️ 環境設定 | [環境変数](https://docs.newapi.pro/ja/docs/installation/config-maintenance/environment-variables) |
-| 📡 APIドキュメント | [APIドキュメント](https://docs.newapi.pro/ja/docs/api) |
-| ❓ よくある質問 | [FAQ](https://docs.newapi.pro/ja/docs/support/faq) |
-| 💬 コミュニティ交流 | [交流チャネル](https://docs.newapi.pro/ja/docs/support/community-interaction) |
+| 🚀 デプロイガイド | [インストールドキュメント](https://docs.cvai.pro/ja/docs/installation) |
+| ⚙️ 環境設定 | [環境変数](https://docs.cvai.pro/ja/docs/installation/config-maintenance/environment-variables) |
+| 📡 APIドキュメント | [APIドキュメント](https://docs.cvai.pro/ja/docs/api) |
+| ❓ よくある質問 | [FAQ](https://docs.cvai.pro/ja/docs/support/faq) |
+| 💬 コミュニティ交流 | [交流チャネル](https://docs.cvai.pro/ja/docs/support/community-interaction) |
 
 ---
 
 ## ✨ 主な機能
 
-> 詳細な機能については[機能説明](https://docs.newapi.pro/ja/docs/guide/wiki/basic-concepts/features-introduction)を参照してください。
+> 詳細な機能については[機能説明](https://docs.cvai.pro/ja/docs/guide/wiki/basic-concepts/features-introduction)を参照してください。
 
 ### 🎨 コア機能
 
@@ -202,15 +202,15 @@ docker run --name new-api -d --restart always \
 ### 🚀 高度な機能
 
 **APIフォーマットサポート:**
-- ⚡ [OpenAI Responses](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/ja/docs/api/ai-model/realtime/create-realtime-session)（Azureを含む）
-- ⚡ [Claude Messages](https://docs.newapi.pro/ja/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://doc.newapi.pro/ja/api/google-gemini-chat)
-- 🔄 [Rerankモデル](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/create-rerank)
-- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/ja/docs/api/ai-model/realtime/create-realtime-session)
-- ⚡ [Claude Messages](https://docs.newapi.pro/ja/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://doc.newapi.pro/ja/api/google-gemini-chat)
-- 🔄 [Rerankモデル](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
+- ⚡ [OpenAI Responses](https://docs.cvai.pro/ja/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://docs.cvai.pro/ja/docs/api/ai-model/realtime/create-realtime-session)（Azureを含む）
+- ⚡ [Claude Messages](https://docs.cvai.pro/ja/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://doc.cvai.pro/ja/api/google-gemini-chat)
+- 🔄 [Rerankモデル](https://docs.cvai.pro/ja/docs/api/ai-model/rerank/create-rerank)
+- ⚡ [OpenAI Realtime API](https://docs.cvai.pro/ja/docs/api/ai-model/realtime/create-realtime-session)
+- ⚡ [Claude Messages](https://docs.cvai.pro/ja/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://doc.cvai.pro/ja/api/google-gemini-chat)
+- 🔄 [Rerankモデル](https://docs.cvai.pro/ja/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
 
 **インテリジェントルーティング:**
 - ⚖️ チャネル重み付けランダム
@@ -253,16 +253,16 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 モデルサポート
 
-> 詳細については[APIドキュメント - 中継インターフェース](https://docs.newapi.pro/ja/docs/api)
+> 詳細については[APIドキュメント - 中継インターフェース](https://docs.cvai.pro/ja/docs/api)
 
 | モデルタイプ | 説明 | ドキュメント |
 |---------|------|------|
 | 🤖 OpenAI GPTs | gpt-4-gizmo-* シリーズ | - |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [ドキュメント](https://doc.newapi.pro/ja/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [ドキュメント](https://doc.newapi.pro/ja/api/suno-music) |
-| 🔄 Rerank | Cohere、Jina | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/create-rerank) |
-| 💬 Claude | Messagesフォーマット | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/chat/create-message) |
-| 🌐 Gemini | Google Geminiフォーマット | [ドキュメント](https://doc.newapi.pro/ja/api/google-gemini-chat) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [ドキュメント](https://doc.cvai.pro/ja/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [ドキュメント](https://doc.cvai.pro/ja/api/suno-music) |
+| 🔄 Rerank | Cohere、Jina | [ドキュメント](https://docs.cvai.pro/ja/docs/api/ai-model/rerank/create-rerank) |
+| 💬 Claude | Messagesフォーマット | [ドキュメント](https://docs.cvai.pro/ja/docs/api/ai-model/chat/create-message) |
+| 🌐 Gemini | Google Geminiフォーマット | [ドキュメント](https://doc.cvai.pro/ja/api/google-gemini-chat) |
 | 🔧 Dify | ChatFlowモード | - |
 | 🎯 カスタム | 完全な呼び出しアドレスの入力をサポート | - |
 
@@ -271,16 +271,16 @@ docker run --name new-api -d --restart always \
 <details>
 <summary>完全なインターフェースリストを表示</summary>
 
-- [チャットインターフェース (Chat Completions)](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/create-chat-completion)
-- [レスポンスインターフェース (Responses)](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/create-response)
-- [イメージインターフェース (Image)](https://docs.newapi.pro/ja/docs/api/ai-model/images/openai/v1-images-generations--post)
-- [オーディオインターフェース (Audio)](https://docs.newapi.pro/ja/docs/api/ai-model/audio/openai/create-transcription)
-- [ビデオインターフェース (Video)](https://docs.newapi.pro/ja/docs/api/ai-model/videos/create-video-generation)
-- [エンベッドインターフェース (Embeddings)](https://docs.newapi.pro/ja/docs/api/ai-model/embeddings/create-embedding)
-- [再ランク付けインターフェース (Rerank)](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/create-rerank)
-- [リアルタイム対話インターフェース (Realtime)](https://docs.newapi.pro/ja/docs/api/ai-model/realtime/create-realtime-session)
-- [Claudeチャット](https://docs.newapi.pro/ja/docs/api/ai-model/chat/create-message)
-- [Google Geminiチャット](https://doc.newapi.pro/ja/api/google-gemini-chat)
+- [チャットインターフェース (Chat Completions)](https://docs.cvai.pro/ja/docs/api/ai-model/chat/openai/create-chat-completion)
+- [レスポンスインターフェース (Responses)](https://docs.cvai.pro/ja/docs/api/ai-model/chat/openai/create-response)
+- [イメージインターフェース (Image)](https://docs.cvai.pro/ja/docs/api/ai-model/images/openai/v1-images-generations--post)
+- [オーディオインターフェース (Audio)](https://docs.cvai.pro/ja/docs/api/ai-model/audio/openai/create-transcription)
+- [ビデオインターフェース (Video)](https://docs.cvai.pro/ja/docs/api/ai-model/videos/create-video-generation)
+- [エンベッドインターフェース (Embeddings)](https://docs.cvai.pro/ja/docs/api/ai-model/embeddings/create-embedding)
+- [再ランク付けインターフェース (Rerank)](https://docs.cvai.pro/ja/docs/api/ai-model/rerank/create-rerank)
+- [リアルタイム対話インターフェース (Realtime)](https://docs.cvai.pro/ja/docs/api/ai-model/realtime/create-realtime-session)
+- [Claudeチャット](https://docs.cvai.pro/ja/docs/api/ai-model/chat/create-message)
+- [Google Geminiチャット](https://doc.cvai.pro/ja/api/google-gemini-chat)
 
 </details>
 
@@ -289,7 +289,7 @@ docker run --name new-api -d --restart always \
 ## 🚢 デプロイ
 
 > [!TIP]
-> **最新のDockerイメージ:** `calciumion/new-api:latest`
+> **最新のDockerイメージ:** `ctrlc-ctrlv-limited/cvai:latest`
 
 ### 📋 デプロイ要件
 
@@ -316,14 +316,14 @@ docker run --name new-api -d --restart always \
 | `AZURE_DEFAULT_API_VERSION` | Azure APIバージョン | `2025-04-01-preview` |
 | `ERROR_LOG_ENABLED` | エラーログスイッチ | `false` |
 | `PYROSCOPE_URL` | Pyroscopeサーバーのアドレス | - |
-| `PYROSCOPE_APP_NAME` | Pyroscopeアプリ名 | `new-api` |
+| `PYROSCOPE_APP_NAME` | Pyroscopeアプリ名 | `cvai` |
 | `PYROSCOPE_BASIC_AUTH_USER` | Pyroscope Basic Authユーザー | - |
 | `PYROSCOPE_BASIC_AUTH_PASSWORD` | Pyroscope Basic Authパスワード | - |
 | `PYROSCOPE_MUTEX_RATE` | Pyroscope mutexサンプリング率 | `5` |
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope blockサンプリング率 | `5` |
-| `HOSTNAME` | Pyroscope用のホスト名タグ | `new-api` |
+| `HOSTNAME` | Pyroscope用のホスト名タグ | `cvai` |
 
-📖 **完全な設定:** [環境変数ドキュメント](https://docs.newapi.pro/ja/docs/installation/config-maintenance/environment-variables)
+📖 **完全な設定:** [環境変数ドキュメント](https://docs.cvai.pro/ja/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -334,8 +334,8 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # プロジェクトをクローン
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/ctrlc-ctrlv-limited/cvai.git
+cd cvai
 
 # 設定を編集
 nano docker-compose.yml
@@ -351,21 +351,21 @@ docker-compose up -d
 
 **SQLiteを使用:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 ```
 
 **MySQLを使用:**
 ```bash
-docker run --name new-api -d --restart always \
+docker run --name cvai -d --restart always \
   -p 3000:3000 \
   -e SQL_DSN="root:123456@tcp(localhost:3306)/oneapi" \
   -e TZ=Asia/Shanghai \
   -v ./data:/data \
-  calciumion/new-api:latest
+  ctrlc-ctrlv-limited/cvai:latest
 ```
 
 > **💡 パス説明:** 
@@ -377,7 +377,7 @@ docker run --name new-api -d --restart always \
 <details>
 <summary><strong>方法 3: 宝塔パネル</strong></summary>
 
-1. 宝塔パネル（**9.2.0バージョン**以上）をインストールし、アプリケーションストアで**New-API**を検索してインストールします。
+1. 宝塔パネル（**9.2.0バージョン**以上）をインストールし、アプリケーションストアで**CVAI**を検索してインストールします。
 
 📖 [画像付きチュートリアル](./docs/BT.md)
 
@@ -413,7 +413,7 @@ docker run --name new-api -d --restart always \
 | プロジェクト | 説明 |
 |------|------|
 | [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool) | キー使用量クォータ照会ツール |
-| [new-api-horizon](https://github.com/Calcium-Ion/new-api-horizon) | New API高性能最適化版 |
+| [cvai-horizon](https://github.com/ctrlc-ctrlv-limited/cvai-horizon) | CVAI高性能最適化版 |
 
 ---
 
@@ -423,10 +423,10 @@ docker run --name new-api -d --restart always \
 
 | リソース | リンク |
 |------|------|
-| 📘 よくある質問 | [FAQ](https://docs.newapi.pro/ja/docs/support/faq) |
-| 💬 コミュニティ交流 | [交流チャネル](https://docs.newapi.pro/ja/docs/support/community-interaction) |
-| 🐛 問題のフィードバック | [問題フィードバック](https://docs.newapi.pro/ja/docs/support/feedback-issues) |
-| 📚 完全なドキュメント | [公式ドキュメント](https://docs.newapi.pro/ja/docs) |
+| 📘 よくある質問 | [FAQ](https://docs.cvai.pro/ja/docs/support/faq) |
+| 💬 コミュニティ交流 | [交流チャネル](https://docs.cvai.pro/ja/docs/support/community-interaction) |
+| 🐛 問題のフィードバック | [問題フィードバック](https://docs.cvai.pro/ja/docs/support/feedback-issues) |
+| 📚 完全なドキュメント | [公式ドキュメント](https://docs.cvai.pro/ja/docs) |
 
 ### 🤝 貢献ガイド
 
@@ -443,7 +443,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-[![スター履歴チャート](https://api.star-history.com/svg?repos=Calcium-Ion/new-api&type=Date)](https://star-history.com/#Calcium-Ion/new-api&Date)
+[![スター履歴チャート](https://api.star-history.com/svg?repos=ctrlc-ctrlv-limited/cvai&type=Date)](https://star-history.com/#ctrlc-ctrlv-limited/cvai&Date)
 
 </div>
 
@@ -451,12 +451,12 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 💖 New APIをご利用いただきありがとうございます
+### 💖 CVAIをご利用いただきありがとうございます
 
 このプロジェクトがあなたのお役に立てたなら、ぜひ ⭐️ スターをください！
 
-**[公式ドキュメント](https://docs.newapi.pro/ja/docs)** • **[問題フィードバック](https://github.com/Calcium-Ion/new-api/issues)** • **[最新リリース](https://github.com/Calcium-Ion/new-api/releases)**
+**[公式ドキュメント](https://docs.cvai.pro/ja/docs)** • **[問題フィードバック](https://github.com/ctrlc-ctrlv-limited/cvai/issues)** • **[最新リリース](https://github.com/ctrlc-ctrlv-limited/cvai/releases)**
 
-<sub>❤️ で構築された QuantumNous</sub>
+<sub>❤️ で構築された CtrlC CtrlV Limited</sub>
 
 </div>

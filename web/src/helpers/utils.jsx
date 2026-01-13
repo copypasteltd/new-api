@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 CtrlC & CtrlV Limited
+Copyright (C) 2025 CtrlC CtrlV Limited
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -48,7 +48,7 @@ export function isRoot() {
 
 export function getSystemName() {
   let system_name = localStorage.getItem('system_name');
-  if (!system_name) return 'CtrlC & CtrlV AI';
+  if (!system_name) return 'CVAI';
   return system_name;
 }
 

@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2025 CtrlC & CtrlV Limited
+Copyright (C) 2025 CtrlC CtrlV Limited
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -346,7 +346,7 @@ export const getChannelsColumns = ({
             {nameNode}
             <Tooltip
               content={t(
-                '该渠道已开启请求透传：参数覆写、模型重定向、渠道适配等 CtrlC & CtrlV AI 内置功能将失效，非最佳实践；如因此产生问题，请勿提交 issue 反馈。',
+                '该渠道已开启请求透传：参数覆写、模型重定向、渠道适配等 CVAI 内置功能将失效，非最佳实践；如因此产生问题，请勿提交 issue 反馈。',
               )}
               trigger='hover'
               position='topLeft'

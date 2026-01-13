@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/QuantumNous/new-api/service/openaicompat"
-	"github.com/QuantumNous/new-api/setting/model_setting"
+	"github.com/ctrlc-ctrlv-limited/cvai/service/openaicompat"
+	"github.com/ctrlc-ctrlv-limited/cvai/setting/model_setting"
 )
 
 func ShouldChatCompletionsUseResponsesPolicy(policy model_setting.ChatCompletionsToResponsesPolicy, channelID int, model string) bool {
